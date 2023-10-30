@@ -32,6 +32,5 @@ Route::post('/login', [AuthController::class, 'authUser']);
 Route::middleware('auth')->group( function() {
     Route::resource('/boards', BoardController::class);
     Route::resource('/tickets', TicketsController::class);
-    Route::get('/admin/boards', [AdminController::class, 'mostUserHasBoard']);
     Route::post('/invite/boards/{board}', InviteUserToBoardController::class);
 });

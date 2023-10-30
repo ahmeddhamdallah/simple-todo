@@ -40,6 +40,12 @@ password: secret
 ```
 The Todo sample project is now up and running! Access it at http://localhost:8000.
 
+To pages:
+```bash
+http://localhost:8000/boards
+http://localhost:8000/tickets
+```
+
 ***Note*** : It's recommended to have a clean database before seeding. You can refresh your migrations at any point to clean the database by running the following command will seed the database seeder also
 ``` bash
 art migrate:fresh --seed
